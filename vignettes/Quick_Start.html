@@ -334,13 +334,13 @@ $(document).ready(function () {
 
 <div id="quick-start" class="section level2">
 <h2>Quick Start</h2>
-<p>The SeeGEM package contains the information used to create the <a href="https://cdn.rawgit.com/davemcg/see_gem/master/inst/extdata/demo.html?raw=True">demo file</a></p>
+<p>The SeeGEM package contains the information used to create the <a href="https://cdn.rawgit.com/davemcg/SeeGEM_docs/98d1b0cf/demos/demo.html">demo file</a></p>
 <p>Before you get started with your own data, I suggest you recreate this document to make sure you have all of the libraries and pandoc installed on your computer.</p>
 <pre class="r"><code>library(SeeGEM)
 knit_see_gem()
 #&gt; processing file: document_template.Rmd
 #&gt; output file: document_template.knit.md
-#&gt; /usr/local/bin/pandoc +RTS -K512m -RTS document_template.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output /Users/mcgaugheyd/SeeGEM_document.html --email-obfuscation none --self-contained --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:flatly' --include-in-header /var/folders/s4/y5f1tt296dj8088gvczcx11d4lrnr7/T//RtmpnsOXEh/rmarkdown-str2bcc415bf54b.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+#&gt; /usr/local/bin/pandoc +RTS -K512m -RTS document_template.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output /Users/mcgaugheyd/SeeGEM_document.html --email-obfuscation none --self-contained --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:flatly' --include-in-header /var/folders/s4/y5f1tt296dj8088gvczcx11d4lrnr7/T//RtmpOS8V1P/rmarkdown-str341875d7b758.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 #&gt; 
 #&gt; Output created: ~/SeeGEM_document.html</code></pre>
 <p>This should create <code>SeeGEM_document.html</code> in your base user directory (<code>~/</code>)</p>
@@ -348,7 +348,7 @@ knit_see_gem()
 <pre class="r"><code>knit_see_gem(skip_stats = 'no')
 #&gt; processing file: document_template.Rmd
 #&gt; output file: document_template.knit.md
-#&gt; /usr/local/bin/pandoc +RTS -K512m -RTS document_template.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output /Users/mcgaugheyd/SeeGEM_document.html --email-obfuscation none --self-contained --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:flatly' --include-in-header /var/folders/s4/y5f1tt296dj8088gvczcx11d4lrnr7/T//RtmpnsOXEh/rmarkdown-str2bcc29c4120a.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+#&gt; /usr/local/bin/pandoc +RTS -K512m -RTS document_template.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output /Users/mcgaugheyd/SeeGEM_document.html --email-obfuscation none --self-contained --standalone --section-divs --template /Library/Frameworks/R.framework/Versions/3.5/Resources/library/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:flatly' --include-in-header /var/folders/s4/y5f1tt296dj8088gvczcx11d4lrnr7/T//RtmpOS8V1P/rmarkdown-str34185e1b58af.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 #&gt; 
 #&gt; Output created: ~/SeeGEM_document.html</code></pre>
 <p>Now it is time to use your own data. You will need the following:</p>
