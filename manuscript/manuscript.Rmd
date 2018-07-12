@@ -1,0 +1,22 @@
+---
+title: 'SeeGEM: Lightweight Interactive Visualization of DNA Sequence Variation Prioritization'
+author: "David McGaughey"
+date: "July 10, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract/Introduction
+  
+  Identification of genetic variation causing human disease in a proband is a complex process; raw DNA sequence must be aligned to a reference genome, genotypes called from the aligned reads, annotations (e.g. gnomAD, CADD) appended, and family structure (proband, mother, father) delineated. The most powerful and popular tool for doing the filtering and inheritance pattern testing is the GEMINI tool. However even running GEMINI to filter for DNA variants passing quality control metrics, match proper inheritance patterns (e.g recessive, dominant), and have sufficiently low allele frequency in healthy population(s), a proband will still have dozens to hundreds of possible variants that an analyst must hand assess. An analyst must balance several different metrics (protein consequence, *in silico* pathogenicity, etc.) as well as assess whether the sequencing for the trio or cohort has passed technical quality controls. As GEMINI is a command line tool, the output is a dense display of tab separated values filling the computer screen. To more efficiently aid this manual curation, I have written the R package SeeGEM, which wraps the output from GEMINI into a reactive html document. These portable (no internet required) and compact (usually <2 megabytes) files can also incorporate crucial sequencing quality control metrics from the peddy tool. The reactive tables can be labeled with color to delineate pathogenicity, the columns and rows can be re-ordered and searched within, and several columns data types can be turned into URLs to facilitate searches of variant information in web resources like OMIM, gnomAD, dbSNP, and Google Scholar. Shortcuts in the header allow for user-specific sets of annotations, which is crucial given that hundreds of annotations are possible for each DNA variant. The combination of GEMINI, peddy, and SeeGEM provide similar functionality to tools like Seave and VarApp without requiring complicated installation procedures and maintenance of web servers/apps. SeeGEM can be installed and run with only a few commands in R. It has been engineered to be easily be integrated into existing DNA analysis pipelines.
+  
+# Introduction
+
+
+# Bioinformatics
+
+Application Notes (up to 2 pages; this is approx. 1,300 words or 1,000 words plus one figure): Applications Notes are short descriptions of novel software or new algorithm implementations, databases and network services (web servers, and interfaces). Software or data must be freely available to non-commercial users. Availability and Implementation must be clearly stated in the article. Authors must also ensure that the software is available for a full TWO YEARS following publication. Web services must not require mandatory registration by the user. Additional Supplementary data can be published online-only by the journal. This supplementary material should be referred to in the abstract of the Application Note. If describing software, the software should run under nearly all conditions on a wide range of machines. Web servers should not be browser specific. Application Notes must not describe trivial utilities, nor involve significant investment of time for the user to install. The name of the application should be included in the title.
+
